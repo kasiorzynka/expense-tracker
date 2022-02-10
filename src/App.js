@@ -1,6 +1,7 @@
-import Expenses from "./components/Expenses";
+import NewExpense from "./components/NewExpense/NewExpense";
+import Expenses from "./components/Expenses/Expenses";
 
-function App() {
+const App = () => {
   const expenses = [
     {
       id: "e1",
@@ -29,10 +30,10 @@ function App() {
   ];
   return (
     <div>
-      <h2>Welcome to Your expense tracker app!</h2>
+      <NewExpense />
       <Expenses items={expenses} />
     </div>
   );
-}
+};
 
 export default App;
